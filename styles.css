@@ -1,0 +1,25 @@
+h1{
+	text-align:center;
+	padding-top:25px;
+	font-family:arial;
+}
+
+h3 {
+	background:#CCDD99;	
+	padding:10px 10px;
+}
+
+#feeds {
+	background:#CCCCCC;	
+	padding:10px 10px;
+}
+
+body {
+	width:980px;	
+	margin:0px auto;
+	font-family:arial;
+}
+
+footer{
+	text-align:center;
+}

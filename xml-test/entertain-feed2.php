@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=Piano&oq=Piano
+
+// Category: Entertainment. 
+// Topic: Piano
+
+  $topic = 'Piano'; 
 
   // q=election+poll+president
 

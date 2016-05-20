@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=kittens&oq=kittens&output=rss
+
+// Category: News
+// Topic: kittens. Because who doesn't love kittens?!
+
+  $topic = 'kittens'; 
 
   // q=election+poll+president
 

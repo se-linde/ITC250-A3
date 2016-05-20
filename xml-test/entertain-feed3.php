@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=Radiohead&oq=Radiohead&output=rss
+
+// Category: Entertainment. 
+// Topic: Radiohead. They're a band. 
+
+  $topic = 'Radiohead'; 
 
   // q=election+poll+president
 

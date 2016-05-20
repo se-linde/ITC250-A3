@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=California+Science+Center&oq=California+Science+Center&output=rss
+
+// Category: Science
+// Topic: California Science Center. Wanted a multi-word variable for $topic. 
+
+  $topic = 'California+Science+Center'; 
 
   // q=election+poll+president
 

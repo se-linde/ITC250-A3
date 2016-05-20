@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=Midnight+Oil&oq=Midnight+Oil
+
+// Category: Entertainment. 
+// Topic: Midnight Oil. They're a band. 
+
+  $topic = 'Midnight+Oil'; 
 
   // q=election+poll+president
 

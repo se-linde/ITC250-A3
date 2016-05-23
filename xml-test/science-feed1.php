@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=Mars&oq=Mars&output=rss
+
+// Category: Science. 
+// Topic: Mars! The awesome Red Planet. 
+
+  $topic = 'Mars'; 
 
   // q=election+poll+president
 

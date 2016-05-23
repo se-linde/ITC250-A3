@@ -9,7 +9,13 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=gun+control&oq=gun+control&output=rss
+
+// Category: News
+// Topic: Gun Control
+
+  $topic = 'gun+control'; 
 
   // q=election+poll+president
 

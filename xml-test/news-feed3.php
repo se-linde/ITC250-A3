@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=transgender&oq=transgender&output=rss
+
+// Category: News
+// Topic: Transgender. It is in the news, so a valid topic - but not one as heated as Politics. 
+
+  $topic = 'transgender'; 
 
   // q=election+poll+president
 

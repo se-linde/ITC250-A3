@@ -9,7 +9,12 @@
   
   // $topic = 'm'; 
 
-  $topic = 'election+poll+president'; 
+// URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=linear+algebra&output=rss
+
+// Category: Science
+// Topic: Linear Algebra. It's more fascinating than you think.  
+
+  $topic = 'linear+algebra'; 
 
   // q=election+poll+president
 

@@ -14,7 +14,7 @@
 // Category: Entertainment. 
 // Topic: Midnight Oil. They're a band. 
 
-  $topic = 'Rob+Hirst'; 
+  $topic = 'Tupac'; 
 
   // q=election+poll+president
 

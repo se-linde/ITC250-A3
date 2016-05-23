@@ -7,12 +7,16 @@
  //This selects the RSS feed by topic, as set by Google. 
  /* $request = "https://news.google.com/news?cf=all&hl=en&pz=1&ned=us&topic=" . $topic . "&output=rss"; */ 
   
-  // $topic = 'm'; 
+// $topic = 'm'; 
 
 // URL of feed: https://www.google.com/search?hl=en&gl=us&tbm=nws&authuser=0&q=kittens&oq=kittens&output=rss
 
 // Category: News
+<<<<<<< HEAD
 // Topic: kittens 
+=======
+// Topic: kittens. Because who doesn't love kittens?!
+>>>>>>> origin/master
 
   $topic = 'kittens'; 
 

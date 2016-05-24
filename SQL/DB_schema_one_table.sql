@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS sp16_rssfeed;
  
 #all tables must be of type InnoDB to do transactions, foreign key constraints
 CREATE TABLE sp16_rssfeed(
-RSSFeed INT UNSIGNED NOT NULL AUTO_INCREMENT,
+RSSFeedID INT UNSIGNED NOT NULL AUTO_INCREMENT,
 AdminID INT UNSIGNED DEFAULT 0,
 Category VARCHAR(255) DEFAULT '',
 Title VARCHAR(255) DEFAULT '',

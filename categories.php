@@ -23,7 +23,7 @@ if(isset($_GET['id']) && (int)$_GET['id'] > 0){#proper data must be on querystri
 	// myRedirect(VIRTUAL_PATH . "demo/demo_list.php");
     
      
-    $myCategory = new Survey($myID);
+    $myCategory = new Category($myID);
     dumpDie($myCategory);
     
     // header('Location:' . VIRTUAL_PATH . 'A3-RSS/entertain-feed1.php'); 
@@ -98,7 +98,7 @@ echo '<div align="center"><a href="' . VIRTUAL_PATH . 'surveys/index.php">Back</
 get_footer(); #defaults to theme footer or footer_inc.php
 
 
-class Survey { // This is our Survey Class.
+class Category { // This is our Category Class.
 // How is the page driven? The class is driven by this same info.     
     
     public $Category = '';         // Assign a neutral blank variable to prevent problems. 

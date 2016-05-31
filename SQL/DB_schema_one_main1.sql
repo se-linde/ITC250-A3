@@ -14,16 +14,17 @@ DROP TABLE IF EXISTS sp16_rssfeed;
 CREATE TABLE sp16_rssfeed(
 RSSFeedID INT UNSIGNED NOT NULL AUTO_INCREMENT,
 CategoryID INT UNSIGNED NOT NULL DEFAULT 0,
-Category VARCHAR(255) DEFAULT '',
-Title VARCHAR(255) DEFAULT '',
-FeedURL TEXT DEFAULT '',
 DateAdded DATETIME,
-LastUpdated TIMESTAMP DEFAULT 0 ON UPDATE CURRENT_TIMESTAMP,
-PRIMARY KEY (RSSFeedID)
+PRIMARY KEY (RSSFeedID),
+INDEX CategoryID_index(CategoryID)
 )ENGINE=INNODB;
 
 #assigning first RSSFeed to RSSFeedID == 1
-INSERT INTO sp16_rssfeed VALUES (NULL,NULL,'Entertainment','Midnight Oil','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed1.php',NOW(),NOW());
+INSERT INTO sp16_rssfeed VALUES (NULL,1,NOW());
+
+
+
+
 
 
 /* 

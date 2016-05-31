@@ -4,6 +4,7 @@
 # Mandatory for our one main table, sp16_rssfeed. 
 # Haven't been able to run into MySQL, as I can't log in. 
 
+/*
 SET foreign_key_checks = 0; #turn off constraints temporarily
 
 #since constraints cause problems, drop tables first, working backward
@@ -24,6 +25,25 @@ PRIMARY KEY (RSSFeedID)
 
 #assigning first RSSFeed to RSSFeedID == 1
 INSERT INTO sp16_rssfeed VALUES (NULL,NULL,'Entertainment','Midnight Oil','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed1.php',NOW(),NOW());
+*/
+
+DROP TABLE IF EXISTS sp16_rssfeed_News;
+CREATE TABLE sp16_rssfeed_News(
+NewsID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+CategoryID INT UNSIGNED DEFAULT 0,
+Title TEXT DEFAULT '',
+FeedURL TEXT DEFAULT '',
+DateAdded DATETIME,
+LastUpdated TIMESTAMP DEFAULT 0 ON UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY (NewsID),
+INDEX CategoryID_index(CategoryID),
+FOREIGN KEY (CategoryID) REFERENCES sp16_rssfeed_Categories(CategoryID) ON DELETE CASCADE
+)ENGINE=INNODB;
+
+#fill table 3 sp16_rssfeed_News
+INSERT INTO sp16_rssfeed_News VALUES (NULL,2,'kittens','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/news-feed1.php',NOW(),NOW());
+INSERT INTO sp16_rssfeed_News VALUES (NULL,2,'gun control','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/news-feed2.php',NOW(),NOW());
+INSERT INTO sp16_rssfeed_News VALUES (NULL,2,'transgender','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/news-feed3.php',NOW(),NOW());  
 
 
 /* 

@@ -9,7 +9,7 @@ SET foreign_key_checks = 0; #turn off constraints temporarily
 #since constraints cause problems, drop tables first, working backward
 DROP TABLE IF EXISTS sp16_rssfeed;
  
- 
+/*  
 #all tables must be of type InnoDB to do transactions, foreign key constraints
 CREATE TABLE sp16_rssfeed(
 RSSFeedID INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -23,9 +23,49 @@ PRIMARY KEY (RSSFeedID)
 )ENGINE=INNODB;
 
 #assigning first RSSFeed to RSSFeedID == 1
-INSERT INTO sp16_rssfeed VALUES (NULL,NULL,'Entertainment','Midnight Oil','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed1.php',NOW(),NOW());
+INSERT INTO sp16_rssfeed VALUES (NULL,NULL,'Entertainment','Midnight Oil','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed1.php',NOW(),NOW()); */ 
 
 
+DROP TABLE IF EXISTS sp16_rssfeed_Entertainment;
+CREATE TABLE sp16_rssfeed_Entertainment(
+EntertainmentID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+CategoryID INT UNSIGNED DEFAULT 0,
+Title TEXT DEFAULT '',
+FeedURL TEXT DEFAULT '',
+DateAdded DATETIME,
+LastUpdated TIMESTAMP DEFAULT 0 ON UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY (EntertainmentID),
+INDEX CategoryID_index(CategoryID),
+FOREIGN KEY (CategoryID) REFERENCES sp16_rssfeed_Categories(CategoryID) ON DELETE CASCADE
+)ENGINE=INNODB;
+
+#fill table 2 sp16_rssfeed_Entertainment 
+
+INSERT INTO sp16_rssfeed_Entertainment VALUES (NULL,1,'Midnight Oil','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed1.php',NOW(),NOW());
+INSERT INTO sp16_rssfeed_Entertainment VALUES (NULL,1,'Piano','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed2.php',NOW(),NOW());
+INSERT INTO sp16_rssfeed_Entertainment VALUES (NULL,1,'Radiohead','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed3.php',NOW(),NOW());
+
+
+
+/* This works for the main table. 
+
+
+DROP TABLE IF EXISTS sp16_rssfeed;
+ 
+ 
+#all tables must be of type InnoDB to do transactions, foreign key constraints
+CREATE TABLE sp16_rssfeed(
+RSSFeedID INT UNSIGNED NOT NULL AUTO_INCREMENT,
+CategoryID INT UNSIGNED NOT NULL DEFAULT 0,
+DateAdded DATETIME,
+PRIMARY KEY (RSSFeedID),
+INDEX CategoryID_index(CategoryID)
+)ENGINE=INNODB;
+
+#assigning first RSSFeed to RSSFeedID == 1
+INSERT INTO sp16_rssfeed VALUES (NULL,1,NOW());
+
+/* 
 /* 
 
 # Optional tables, in case we need multiple ones. Need to be modified from homework. 

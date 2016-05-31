@@ -1,16 +1,31 @@
+SET foreign_key_checks = 0; #turn off constraints temporarily
+
 #############table sp16_rssfeed###########
 DROP TABLE IF EXISTS sp16_rssfeed;
-CREATE TABLE sp16_rssfeed
+
+
+
+CREATE TABLE sp16_rssfeed(
 RSSFeedID INT UNSIGNED NOT NULL AUTO_INCREMENT,
 CategoryID INT UNSIGNED NOT NULL DEFAULT 0,
 DateAdded DATETIME,
 PRIMARY KEY (RSSFeedID),
 INDEX CategoryID_index(CategoryID),
-FOREIGN KEY (CategoryID) REFERENCES sp16_rssfeed_Categories(CategoryID) ON DELETE CASCADE
-)ENGINE=INNODB;
+FOREIGN KEY (CategoryID) REFERENCES 
+
 
 #fill table sp16_rssfeed
 INSERT INTO sp16_rssfeed VALUES (NULL,1,NOW());
+    
+    
+#Run this after all tables have been created.      
+sp16_rssfeed_Categories(CategoryID) ON DELETE CASCADE
+)ENGINE=INNODB;
+
+
+
+
+
 
 #############table 1 sp16_rssfeed_Categories#############
 DROP TABLE IF EXISTS sp16_rssfeed_Categories;

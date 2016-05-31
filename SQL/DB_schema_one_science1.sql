@@ -4,6 +4,7 @@
 # Mandatory for our one main table, sp16_rssfeed. 
 # Haven't been able to run into MySQL, as I can't log in. 
 
+/* 
 SET foreign_key_checks = 0; #turn off constraints temporarily
 
 #since constraints cause problems, drop tables first, working backward
@@ -24,6 +25,8 @@ PRIMARY KEY (RSSFeedID)
 
 #assigning first RSSFeed to RSSFeedID == 1
 INSERT INTO sp16_rssfeed VALUES (NULL,NULL,'Entertainment','Midnight Oil','http://www.lindese.com/itc250/sandbox/A3-RSS/xml-test/entertain-feed1.php',NOW(),NOW());
+*/ 
+
 
 
 /* 

@@ -19,6 +19,7 @@ require '../inc_rssconfig/config_inc.php'; #provides configuration, pathing, err
 
 if(isset($_GET['id']) && (int)$_GET['id'] > 0){#proper data must be on querystring
 	 $myID = (int)$_GET['id']; #Convert to integer, will equate to zero if fails. Casts it here. 
+    // This doesn't work for text; investigate why. 
 }else{
 	// myRedirect(VIRTUAL_PATH . "demo/demo_list.php");
     
@@ -52,7 +53,7 @@ dumpDie($myCategory);
 
 if($foundRecord)
 {#only load data if record found
-	$config->titleTag = $Title . " categories made with PHP & love!"; #overwrite PageTitle with Survey info!
+	$config->titleTag = $Title . " categories made with PHP & love!"; #overwrite PageTitle with Category info!
 }
 /*
 $config->metaDescription = 'Web Database ITC250 class website.'; #Fills <meta> tags.
@@ -136,9 +137,9 @@ class Category { // This is our Category Class.
 
         @mysqli_free_result($result); # We're done with the data!
         
-            }// end Survey Constructor. 
+            }// end Category Constructor. 
     
-}// end Survey Class. 
+}// end Category Class. 
         
 /*         
         

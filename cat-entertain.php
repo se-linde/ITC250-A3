@@ -23,8 +23,8 @@ if(isset($_GET['id']) && (int)$_GET['id'] > 0){#proper data must be on querystri
 	// myRedirect(VIRTUAL_PATH . "demo/demo_list.php");
     
      
-    $myCategory = new Survey($myID);
-    dumpDie($myCategory);
+    $myFeed = new Feed($myID);
+    dumpDie($myFeed);
     
     // header('Location:' . VIRTUAL_PATH . 'A3-RSS/entertain-feed1.php'); 
 }
@@ -40,9 +40,8 @@ $foundRecord = FALSE; # Will change to true, if record found!
    
 // Create class here. This was the DB info. 
 
-
-$myCategory = new Category($myID);
-dumpDie($myCategory); 
+    $myFeed = new Feed($myID);
+    dumpDie($myFeed);
 
 // Previous example: 
 // $mySurvey = new Survey($myID);
@@ -52,7 +51,7 @@ dumpDie($myCategory);
 
 if($foundRecord)
 {#only load data if record found
-	$config->titleTag = $Title . " feeds made with PHP & love!"; #overwrite PageTitle with Survey info!
+	$config->titleTag = $Title . " feeds made with PHP & love!"; #overwrite PageTitle with Feed info!
 }
 /*
 $config->metaDescription = 'Web Database ITC250 class website.'; #Fills <meta> tags.
@@ -77,7 +76,7 @@ if($foundRecord)
 {#records exist - show survey!
 
     echo '
-    <h1> align=center"> Here are your three Science feeds!<h1> 
+    <h1> align=center"> Here are your three Entertainment feeds!<h1> 
     <h3 align="center"> ' . $Title . '</h3>
     <h3 align="center"> ' . $FeedURL . '</h3>
     ';
@@ -90,7 +89,7 @@ if($foundRecord)
     
     
 }else{//no such survey!
-    echo '<h3 align="center">What! No such category.</h3>';
+    echo '<h3 align="center">What! No such feed.</h3>';
 }
 
 echo '<div align="center"><a href="' . VIRTUAL_PATH . 'surveys/index.php">Back</a></div>';
@@ -98,7 +97,7 @@ echo '<div align="center"><a href="' . VIRTUAL_PATH . 'surveys/index.php">Back</
 get_footer(); #defaults to theme footer or footer_inc.php
 
 
-class Survey { // This is our Survey Class.
+class Feed { // This is our Feed Class.
 // How is the page driven? The class is driven by this same info.     
     
     public $Title = '';         // Assign a neutral blank variable to prevent problems. 
@@ -126,7 +125,7 @@ class Survey { // This is our Survey Class.
 
         if(mysqli_num_rows($result) > 0)
         {#records exist - process
-	       $this->isValid = true; // Category exists. 	
+	       $this->isValid = true; // Feed exists. 	
 	       while ($row = mysqli_fetch_assoc($result))
 	       {
 			 $this->Title = dbOut($row['Title']);
@@ -136,9 +135,9 @@ class Survey { // This is our Survey Class.
 
         @mysqli_free_result($result); # We're done with the data!
         
-            }// end Survey Constructor. 
+            }// end Feed Constructor. 
     
-}// end Survey Class. 
+}// end Feed Class. 
         
 /*         
         

@@ -22,8 +22,8 @@ if(isset($_GET['id']) && (int)$_GET['id'] > 0){#proper data must be on querystri
 }else{
 	// myRedirect(VIRTUAL_PATH . "demo/demo_list.php");
     
-    $myCategory = new Survey($myID);
-    dumpDie($myCategory);
+    $myFeed = new Feed($myID);
+    dumpDie($myFeed);
     
     // header('Location:' . VIRTUAL_PATH . 'A3-RSS/entertain-feed1.php'); 
 }
@@ -39,9 +39,8 @@ $foundRecord = FALSE; # Will change to true, if record found!
    
 // Create class here. This was the DB info. 
 
-
-$myCategory = new Survey($myID);
-dumpDie($myCategory); 
+    $myFeed = new Feed($myID);
+    dumpDie($myFeed);
 
 // Previous example: 
 // $mySurvey = new Survey($myID);
@@ -89,7 +88,7 @@ if($foundRecord)
     
     
 }else{//no such survey!
-    echo '<h3 align="center">What! No such category.</h3>';
+    echo '<h3 align="center">What! No such feed.</h3>';
 }
 
 echo '<div align="center"><a href="' . VIRTUAL_PATH . 'surveys/index.php">Back</a></div>';
@@ -97,7 +96,7 @@ echo '<div align="center"><a href="' . VIRTUAL_PATH . 'surveys/index.php">Back</
 get_footer(); #defaults to theme footer or footer_inc.php
 
 
-class Survey { // This is our Survey Class.
+class Feed { // This is our Survey Class.
 // How is the page driven? The class is driven by this same info.     
     
     public $Title = '';         // Assign a neutral blank variable to prevent problems. 

@@ -1,0 +1,50 @@
+[May-31-2016 1:17:57] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 25
+[May-31-2016 1:17:57] Table 'central_lindesara_db.sp16_rssfeed_Science' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 124
+[May-31-2016 1:23:01] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 1:23:01] Table 'central_lindesara_db.sp16_rssfeed_Categories' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 125
+[May-31-2016 1:23:03] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 1:23:03] Table 'central_lindesara_db.sp16_rssfeed_Categories' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 125
+[May-31-2016 1:27:24] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 1:27:24] Table 'central_lindesara_db.sp16_rssfeed_Entertainment' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 125
+[May-31-2016 1:27:47] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-news.php on line 26
+[May-31-2016 1:27:47] Table 'central_lindesara_db.sp16_rssfeed_News' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-news.php on line 125
+[May-31-2016 1:28:03] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 25
+[May-31-2016 1:28:03] Table 'central_lindesara_db.sp16_rssfeed_Science' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 124
+[May-31-2016 7:34:33] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 7:34:33] Table 'central_lindesara_db.sp16_rssfeed_Categories' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 125
+[May-31-2016 7:34:51] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 7:34:51] Table 'central_lindesara_db.sp16_rssfeed_Categories' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 125
+[May-31-2016 7:36:01] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 7:36:01] Table 'central_lindesara_db.sp16_rssfeed_Entertainment' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 125
+[May-31-2016 8:14:28] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 8:14:28] Table 'central_lindesara_db.sp16_rssfeed_Categories' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 125
+[May-31-2016 8:14:29] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 8:14:29] Table 'central_lindesara_db.sp16_rssfeed_Entertainment' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 125
+[May-31-2016 8:14:30] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-news.php on line 26
+[May-31-2016 8:14:30] Table 'central_lindesara_db.sp16_rssfeed_News' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-news.php on line 125
+[May-31-2016 8:14:31] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 25
+[May-31-2016 8:14:31] Table 'central_lindesara_db.sp16_rssfeed_Science' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 124
+[May-31-2016 10:05:49] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 10:05:49] Table 'central_lindesara_db.sp16_rssfeed_Categories' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 125
+[May-31-2016 11:15:10] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 11:15:10] Table 'central_lindesara_db.sp16_rssfeed_Categories' doesn't exist in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 125
+[May-31-2016 11:20:11] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 11:20:11] mysqli_connect(): (HY000/1044): Access denied for user 'central_sara_db'@'173.236.128.0/255.255.128.0' to database 'itc250_rssfeed' in /home/sarlin18/lindese.com/itc250/sp16/inc_rssconfig/common_inc.php on line 1271
+[May-31-2016 11:20:11] Access denied for user 'central_sara_db'@'173.236.128.0/255.255.128.0' to database 'itc250_rssfeed' in /home/sarlin18/lindese.com/itc250/sp16/inc_rssconfig/common_inc.php on line 1271
+[May-31-2016 11:20:14] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 11:20:14] mysqli_connect(): (HY000/1044): Access denied for user 'central_sara_db'@'173.236.128.0/255.255.128.0' to database 'itc250_rssfeed' in /home/sarlin18/lindese.com/itc250/sp16/inc_rssconfig/common_inc.php on line 1271
+[May-31-2016 11:20:14] Access denied for user 'central_sara_db'@'173.236.128.0/255.255.128.0' to database 'itc250_rssfeed' in /home/sarlin18/lindese.com/itc250/sp16/inc_rssconfig/common_inc.php on line 1271
+[May-31-2016 11:21:56] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 11:22:22] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 25
+[May-31-2016 11:22:39] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-news.php on line 26
+[May-31-2016 11:22:55] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 14:32:12] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 14:44:58] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 15:56:58] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 26
+[May-31-2016 16:53:22] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 16:53:34] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 16:53:36] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 16:53:42] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 27
+[May-31-2016 16:53:44] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 27
+[May-31-2016 16:54:11] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[May-31-2016 18:28:57] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 27

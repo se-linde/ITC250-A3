@@ -1,0 +1,8 @@
+[May-12-2016 14:17:14] session_start(): Cannot send session cache limiter - headers already sent (output started at /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_list.php:1) in /home/sarlin18/lindese.com/itc250/sp16/inc_0700/common_inc.php on line 215
+[May-12-2016 15:06:42] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_view.php on line 27
+[May-12-2016 15:06:42] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_view.php on line 33
+[May-12-2016 15:06:49] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_view.php on line 27
+[May-12-2016 15:06:49] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_view.php on line 33
+[May-12-2016 15:06:54] Undefined variable: Title in /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_view.php on line 67
+[May-12-2016 15:09:44] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_view.php on line 27
+[May-12-2016 15:09:44] You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in /home/sarlin18/lindese.com/itc250/sp16/surveys/survey_view.php on line 33

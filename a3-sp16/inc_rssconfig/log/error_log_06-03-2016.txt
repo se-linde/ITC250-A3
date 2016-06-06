@@ -1,0 +1,6 @@
+[Jun-03-2016 1:56:02] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 27
+[Jun-03-2016 1:56:15] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/categories.php on line 27
+[Jun-03-2016 2:09:34] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[Jun-03-2016 2:09:39] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-entertain.php on line 26
+[Jun-03-2016 2:09:44] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-news.php on line 26
+[Jun-03-2016 2:09:49] Undefined variable: myID in /home/sarlin18/lindese.com/itc250/sp16/A3-RSS/cat-science.php on line 25

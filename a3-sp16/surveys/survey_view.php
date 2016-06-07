@@ -44,9 +44,16 @@ get_header(); #defaults to theme header or header_inc.php
 
 if($myRSS->isValid)
 { #check to see if we have a valid SurveyID
-	echo '<p>' . $myRSS->Description . '</p>';
-	echo $myRSS->showQuestions();
+    
+echo '<pre>'; 
+// var_dump($myRSS->showQuestions());
+echo '</pre>';
+
+	 '<p>' . $myRSS->Description . '</p>';
+	 $myRSS->showQuestions();
+    
 }else{
+    
 	echo "Sorry, no such feed!";	
 }
 

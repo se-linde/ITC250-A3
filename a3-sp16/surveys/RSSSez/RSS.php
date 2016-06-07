@@ -2,8 +2,6 @@
 //RSS.php
 namespace RSSSez;
 
-
-
 /**
  * Survey Class retrieves data info for an individual Survey
  * 
@@ -55,7 +53,7 @@ class RSS
 		if($this->CategoryID == 0){return FALSE;}
 		
 		#get Survey data from DB
-		$sql = sprintf("select Description, URL from " . PREFIX . "rssfeed_Categories Where CategoryID =1",$this->CategoryID);
+		$sql = sprintf("select Description, URL from " . PREFIX . "rssfeed_Categories Where CategoryID = %d", $this->CategoryID);
 		
 		#in mysqli, connection and query are reversed!  connection comes first
 		$result = mysqli_query(\IDB::conn(),$sql) or die(trigger_error(mysqli_error(\IDB::conn()), E_USER_ERROR));
@@ -75,7 +73,7 @@ class RSS
         
         
 		#attempt to create question objects
-		$sql = sprintf("select EntertainmentID, Title, FeedURL from " . PREFIX . "rssfeed_Entertainment where CategoryID = 1",$this->CategoryID); // Original: CategoryID =%d. 
+		$sql = sprintf("select EntertainmentID, Title, FeedURL from " . PREFIX . "rssfeed_Entertainment where CategoryID =%d", $this->CategoryID); // Original: CategoryID =%d. 
 		$result = mysqli_query(\IDB::conn(),$sql) or die(trigger_error(mysqli_error(\IDB::conn()), E_USER_ERROR));
 		if (mysqli_num_rows($result) > 0)
 		{#show results
@@ -135,7 +133,8 @@ class RSS
         
         
     function showQuestions()
-	{
+       
+    {
 		if($this->TotalQuestions > 0)
 		{#be certain there are questions
 			foreach($this->aQuestion as $question)
@@ -143,6 +142,10 @@ class RSS
 				echo $question->EntertainmentID . " ";
 				echo $question->Title . " ";
 				echo $question->FeedURL . "<br />";
+                
+                // echo $question-><"a href=" . FeedURL . "</a><br />";
+                
+                
 				#call showAnswers() method to display array of Answer objects
 				// $question->showAnswers() . "<br />";
 			}
